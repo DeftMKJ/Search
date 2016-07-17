@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" id="KGk-i7-Jjw" customClass="HotTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zCC-d2-9jB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zCC-d2-9jB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FMc-1h-Z20"/>
+                    <constraint firstAttribute="bottom" secondItem="zCC-d2-9jB" secondAttribute="bottom" id="HXZ-C7-Mbq"/>
+                    <constraint firstAttribute="trailing" secondItem="zCC-d2-9jB" secondAttribute="trailing" id="csH-pk-cM5"/>
+                    <constraint firstItem="zCC-d2-9jB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wFW-e7-jgw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="articleImage" destination="zCC-d2-9jB" id="euH-dh-mHG"/>
+            </connections>
+            <point key="canvasLocation" x="137" y="260"/>
+        </tableViewCell>
+    </objects>
+</document>
